@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body >
+   
+      <div id="theme">
+
+          <div class="flex items-center content-center flex-col py-8 space-y-4 text-white">
+              <div class="flex space-x-3">
+                  <input id="search" type="text" placeholder="Search Location" class="search w-[40vw] rounded-xl text-center py-2 text-black">
+                  <button id="submits" class="btn rounded-xl bg-gray-700 text-white font-bold p-2">Search</button>
+              </div>
+              <div class="text-2xl font-bold" id="cities"></div>
+              <div id="temp1" class="font-bold text-6xl"></div>
+              <div class="text-2xl font-bold" id="type"></div>
+          </div>
+          
+          <div class="grid grid-cols-2 justify-center items-center gap-y-6 text-white mb-14 md:px-40">
+                <div class="text-center space-y-2">
+                    <div id="feel" class="text-2xl md:text-3xl"></div>
+                    <div class="font-semibold text-sm md:text-base">Feels Like</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <div id="humidity" class="text-2xl md:text-3xl"></div>
+                    <div class="font-semibold text-sm md:text-base">Humidity</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <div id="speed" class="text-2xl md:text-3xl"><span class="font-medium text-lg relative -top-[0px] ">km/hr</span></div>
+                    <div class="font-semibold text-sm md:text-base">Wind Speed</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <div id="pct" class="text-2xl md:text-3xl"></div>
+                    <div class="font-semibold text-sm md:text-base">Cloud-PCT</div>
+                </div>
+                <div class="text-center space-y-2">
+                  <div id="max" class="text-2xl md:text-3xl"></div>
+                  <div class="font-semibold text-sm md:text-base">Max-temperature</div>
+              </div>
+              <div class="text-center space-y-2">
+                  <div id="min" class="text-2xl md:text-3xl"></div>
+                  <div class="font-semibold text-sm md:text-base">Min-Tempreature</div>
+              </div>
+          </div>
+      </div>
+
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
